@@ -31,24 +31,22 @@ legal/
   remboursement.html
 ```
 
-## 🖼️ Ajouter vos vraies photos
+## 🖼️ Vos photos (déjà intégrées)
 
-Les visuels des prestations et de la galerie sont pour l'instant des **rendus CSS** (dégradés animés) servant de placeholders premium. Pour les remplacer par vos photos :
+Vos 14 photos sont dans `assets/img/` et déjà utilisées :
+- **Sablage** → `IMG_0077.jpeg` · **Vaporblasting** → `IMG_9666.jpeg` · **Peinture Époxy** → `IMG_0084.jpeg` · **Diamantage** → `IMG_0359.jpeg`
+- **Galerie** : les 14 photos défilent dans le carrousel.
 
-1. Déposez vos images dans `assets/img/` (format `.webp` ou `.jpg` recommandé, ~1600 px de large).
-2. Dans `assets/css/style.css`, remplacez le fond de la classe concernée par votre image. Exemple pour le vaporblasting :
+Elles ont été **optimisées pour le web** (redimensionnées à 1800 px, ~35 Mo → ~5 Mo au total) pour un chargement rapide. Les originaux restent sur votre appareil.
 
-   ```css
-   .visual-vapor{
-     background-image: url("../img/vaporblasting.jpg");
-     background-size: cover;
-     background-position: center;
-   }
-   ```
+**Changer la photo d'une prestation** : dans `assets/css/style.css`, modifiez l'`url(...)` de la classe concernée (`.visual-sablage`, `.visual-vapor`, `.visual-epoxy`, `.visual-diamant`).
+**Changer la galerie** : modifiez les `background-image` des `<figure class="slide">` dans `index.html`.
 
-3. Pour la galerie, faites de même sur `.slide--1` à `.slide--6`.
+## 🇫🇷 Le logo
 
-Astuce : gardez un rendu sombre/premium et des photos nettes bien cadrées pour l'effet « wow ».
+Le logo affiché est une version **SVG tricolore** (bleu-blanc-rouge) recréée d'après votre marque. Pour utiliser **votre fichier exact** :
+1. Déposez-le dans `assets/img/` (ex. `logo.png`, fond transparent).
+2. Signalez-le moi et je l'intègre dans l'en-tête, le hero, le préchargement et le pied de page — ou remplacez les blocs `<svg class="brandmark">` / `<span class="logo__mark">` par `<img src="assets/img/logo.png" alt="TMCustom">`.
 
 ## ✏️ Informations à compléter avant mise en ligne
 

@@ -27,13 +27,11 @@
     <div class="preloader__logo">
       <svg viewBox="0 0 420 90" class="brandmark" aria-label="TMCustom">
         <defs>
-          <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#ffffff"/>
-            <stop offset="30%" stop-color="#e8ebf0"/>
-            <stop offset="50%" stop-color="#9aa2b0"/>
-            <stop offset="52%" stop-color="#7c8390"/>
-            <stop offset="70%" stop-color="#c7ccd6"/>
-            <stop offset="100%" stop-color="#ffffff"/>
+          <linearGradient id="triPre" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#3f6fd6"/>
+            <stop offset="38%" stop-color="#ffffff"/>
+            <stop offset="62%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#e3353b"/>
           </linearGradient>
         </defs>
         <text x="50%" y="62" text-anchor="middle" class="brandmark__text">TM<tspan class="brandmark__thin">CUSTOM</tspan></text>
@@ -90,6 +88,14 @@
       <p class="hero__eyebrow reveal">Savoir-faire Français · Depuis 2022</p>
       <h1 class="hero__logo reveal">
         <svg viewBox="0 0 520 120" class="brandmark brandmark--hero" aria-label="TMCustom">
+          <defs>
+            <linearGradient id="triHero" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#4b7ce0"/>
+              <stop offset="34%" stop-color="#ffffff"/>
+              <stop offset="66%" stop-color="#ffffff"/>
+              <stop offset="100%" stop-color="#e8393f"/>
+            </linearGradient>
+          </defs>
           <text x="50%" y="80" text-anchor="middle" class="brandmark__text">TM<tspan class="brandmark__thin">CUSTOM</tspan></text>
         </svg>
       </h1>
@@ -298,18 +304,25 @@
     <div class="carousel reveal" id="carousel">
       <button class="carousel__nav carousel__nav--prev" id="carPrev" aria-label="Précédent">‹</button>
       <div class="carousel__track" id="carTrack">
-        <!-- slides injected/duplicated, base ones below -->
-        <figure class="slide slide--1"><figcaption>Jante diamantée · Automobile</figcaption></figure>
-        <figure class="slide slide--2"><figcaption>Carter moto · Vaporblasting</figcaption></figure>
-        <figure class="slide slide--3"><figcaption>Mobilier extérieur · Époxy</figcaption></figure>
-        <figure class="slide slide--4"><figcaption>Châssis · Thermolaquage</figcaption></figure>
-        <figure class="slide slide--5"><figcaption>Pièce alliage · Sablage</figcaption></figure>
-        <figure class="slide slide--6"><figcaption>Élément déco · Finition sur-mesure</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_0359.jpeg')"><figcaption>Jante polie miroir · Diamantage</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_9666.jpeg')"><figcaption>Carter aluminium satiné · Vaporblasting</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/BD6E241E-B311-42B6-8AAD-2FDD07CC447A.jpeg')"><figcaption>Jante jaune éclatant · Peinture Époxy</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_9606.jpeg')"><figcaption>Cadre moto rouge · Thermolaquage</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_0084.jpeg')"><figcaption>Jantes candy bleu · Peinture Époxy</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_0077.jpeg')"><figcaption>Jante multibranche argent · Sablage</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_8499.jpeg')"><figcaption>Jante anthracite · Finition satinée</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_9474.jpeg')"><figcaption>Ressort candy rouge · Époxy</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_8871.jpeg')"><figcaption>Ressort violet métallisé · Époxy</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_9206.jpeg')"><figcaption>Jantes moto sur-mesure · Époxy</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_0667.jpeg')"><figcaption>Jante teinte or · Finition sur-mesure</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_0010.jpeg')"><figcaption>Jante noire liseré rouge · Époxy</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_0400.jpeg')"><figcaption>Carter Yamaha · Vaporblasting</figcaption></figure>
+        <figure class="slide" style="background-image:url('assets/img/IMG_0399.jpeg')"><figcaption>Cadre brut · Avant traitement</figcaption></figure>
       </div>
       <button class="carousel__nav carousel__nav--next" id="carNext" aria-label="Suivant">›</button>
     </div>
     <div class="carousel__dots" id="carDots" aria-hidden="true"></div>
-    <p class="gallery__hint container reveal">💡 Astuce&nbsp;: remplacez ces visuels par vos propres photos dans <code>assets/img/</code> — voir le <code>README</code>.</p>
+    <p class="gallery__hint container reveal">Faites glisser ou utilisez les flèches pour parcourir nos réalisations.</p>
   </section>
 
   <!-- ============ 5. AVIS CLIENTS ============ -->
