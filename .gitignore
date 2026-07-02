@@ -1,0 +1,4 @@
+# Prévisualisations locales
+_preview_*.png
+.DS_Store
+node_modules/
